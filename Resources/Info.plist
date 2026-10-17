@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>hu</string>
+	<key>CFBundleDisplayName</key>
+	<string>AbeSweep</string>
+	<key>CFBundleExecutable</key>
+	<string>AbeSweep</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>hu.abesweep.mac</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>hu</string>
+		<string>en</string>
+	</array>
+	<key>CFBundleName</key>
+	<string>AbeSweep</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.4</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>10400</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.0</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.utilities</string>
+	<key>NSAppDataUsageDescription</key>
+	<string>AbeSweep needs access to selected Adobe application data so it can quarantine and restore it.</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright Veress Róbert 2026.</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>SUEnableSystemProfiling</key>
+	<false/>
+	<key>SUFeedURL</key>
+	<string>https://www.macadmin.hu/updates/abesweep/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>aTMVBaWnoWSB1bfE7vawM3Y8T4Tor0+LEWXZUOjjK2s=</string>
+</dict>
+</plist>
