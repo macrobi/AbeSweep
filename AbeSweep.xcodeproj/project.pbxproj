@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		071D73C99AEBE4A2849C214A /* SecretSweepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E64C9E9D3D2EE36DF60E49 /* SecretSweepTests.swift */; };
+		1C4A00019D2E41CCB51A0001 /* Sparkle-2.9.6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1C4A00029D2E41CCB51A0002 /* Sparkle-2.9.6.txt */; };
+		2906447B0A00E35DACD7225E /* AdobeDomainCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D565AA1B48498DD31DF1D82 /* AdobeDomainCatalog.swift */; };
+		2A4A83776CB2741BC6185F7A /* AdobeDomainCatalogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F8D0677193E02307F1FFF9 /* AdobeDomainCatalogTests.swift */; };
+		2C5FA621382B1DEB3F26E6E7 /* AdobeProcessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABADA1843386F7EF0F105E1 /* AdobeProcessController.swift */; };
+		2C6789946993C881A31AE949 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E20CBDA2797E11DB5C4000 /* AppModel.swift */; };
+		55388E0C0DD8FF39AC69A68F /* CheckForUpdatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A89A75E23261504CADA2ECA /* CheckForUpdatesView.swift */; };
+		732D287201C7980CE6DDEBD0 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 79F0734C5B2530B973B32BAF /* Sparkle */; };
+		7982B37DB8356420596D3DD8 /* FullDiskAccessCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F175C1A0D6C0FE5565F377 /* FullDiskAccessCheckerTests.swift */; };
+		7D279154A6AE7F5D88BFD43C /* CleanupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEC53E5142B75EEF40A75F5 /* CleanupService.swift */; };
+		7D71F9D480597852292DDE47 /* HostsFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013120B89BB63CE21CF39A29 /* HostsFileService.swift */; };
+		8AC3D3E027496F6BA96AA512 /* FullDiskAccessChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E7B83BE1FEFAA9415A9C53 /* FullDiskAccessChecker.swift */; };
+		8E0E091265F87F1B23B1C1D0 /* Disclaimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CC70D1E736F99A3674B011 /* Disclaimer.swift */; };
+		9B4845FCF9AF5C9F754BC525 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B084EA9A5B77C6089703630 /* Localization.swift */; };
+		B1D37B36D19059F126BBE6E7 /* DeepSweepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EA5198C909AF8242A8D113 /* DeepSweepApp.swift */; };
+		B93CF5D8C7E4CBF4680207D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273CAD8C09A415E701DB4B53 /* ContentView.swift */; };
+		C7BF06A761A0D19B1585D451 /* AppNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D601769A6635EA06D6B8324 /* AppNotifications.swift */; };
+		E5475361124A336BF7A432CA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957581FF1E41E7B82FD44A09 /* Models.swift */; };
+		E6ECEB3F8687DFA7D3F910E5 /* SecretSweep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A35ABD5149AE370D9B62628 /* SecretSweep.swift */; };
+		E7F42F8B3D74AE29135FB568 /* CleanupServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E31572A2945EECEB6DAEF7 /* CleanupServiceTests.swift */; };
+		EAD902D2897856AA3C2E021F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E56F9911682FD4AA42E5E0D /* InfoPlist.strings */; };
+		EB0CF8C20C4A99301E9E1B98 /* AdobeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF02794FD3A9C8AE45F64DE /* AdobeScanner.swift */; };
+		EB301C73187FFEDABB6EC7A8 /* HostsFileServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6596E498FAF54B19920C546 /* HostsFileServiceTests.swift */; };
+		F2BFD98636DC8C82DFBDDCA7 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B7B09B60BA42B4291AA472CF /* AppIcon.icns */; };
+		F6EA71FF138E265C1AD2E492 /* AdobeScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BFAB2D719FBB7FF0A710E5 /* AdobeScannerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85D1E33E3C5C0C3BB7FDAA99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C3122440F2F5BD49984CB0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D828D765022523B2F9BCF265;
+			remoteInfo = AbeSweep;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		013120B89BB63CE21CF39A29 /* HostsFileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostsFileService.swift; sourceTree = "<group>"; };
+		1C4A00029D2E41CCB51A0002 /* Sparkle-2.9.6.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Sparkle-2.9.6.txt"; sourceTree = "<group>"; };
+		05CC70D1E736F99A3674B011 /* Disclaimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disclaimer.swift; sourceTree = "<group>"; };
+		273CAD8C09A415E701DB4B53 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A87EC87B552E88E86938BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CEC53E5142B75EEF40A75F5 /* CleanupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanupService.swift; sourceTree = "<group>"; };
+		36E64C9E9D3D2EE36DF60E49 /* SecretSweepTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSweepTests.swift; sourceTree = "<group>"; };
+		3B084EA9A5B77C6089703630 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		4837082F4E351C89AA8A6A6E /* AbeSweep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbeSweep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A89A75E23261504CADA2ECA /* CheckForUpdatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckForUpdatesView.swift; sourceTree = "<group>"; };
+		5D601769A6635EA06D6B8324 /* AppNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNotifications.swift; sourceTree = "<group>"; };
+		61E7B83BE1FEFAA9415A9C53 /* FullDiskAccessChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullDiskAccessChecker.swift; sourceTree = "<group>"; };
+		6679A54199A2F30FC8A1D6F0 /* AbeSweep.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AbeSweep.entitlements; sourceTree = "<group>"; };
+		69F175C1A0D6C0FE5565F377 /* FullDiskAccessCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullDiskAccessCheckerTests.swift; sourceTree = "<group>"; };
+		6A35ABD5149AE370D9B62628 /* SecretSweep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretSweep.swift; sourceTree = "<group>"; };
+		71AEC31865A2F2FBD060734F /* AbeSweepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbeSweepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74E20CBDA2797E11DB5C4000 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		7D565AA1B48498DD31DF1D82 /* AdobeDomainCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdobeDomainCatalog.swift; sourceTree = "<group>"; };
+		86BFAB2D719FBB7FF0A710E5 /* AdobeScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdobeScannerTests.swift; sourceTree = "<group>"; };
+		8ABADA1843386F7EF0F105E1 /* AdobeProcessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdobeProcessController.swift; sourceTree = "<group>"; };
+		8FF02794FD3A9C8AE45F64DE /* AdobeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdobeScanner.swift; sourceTree = "<group>"; };
+		939B5B9E68C7E270116A1C01 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		957581FF1E41E7B82FD44A09 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		A1E31572A2945EECEB6DAEF7 /* CleanupServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanupServiceTests.swift; sourceTree = "<group>"; };
+		A649B0C7C720DCE7210A04C2 /* RELEASE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = RELEASE.md; sourceTree = "<group>"; };
+		A8F8D0677193E02307F1FFF9 /* AdobeDomainCatalogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdobeDomainCatalogTests.swift; sourceTree = "<group>"; };
+		AA57F33EC5CD20521E965358 /* AUDIT-1.3.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "AUDIT-1.3.md"; sourceTree = "<group>"; };
+		B7B09B60BA42B4291AA472CF /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		D1EA5198C909AF8242A8D113 /* DeepSweepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSweepApp.swift; sourceTree = "<group>"; };
+		D6596E498FAF54B19920C546 /* HostsFileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostsFileServiceTests.swift; sourceTree = "<group>"; };
+		DC9BFCC03F1D9F51B02CBC58 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA9C3004ED5FAC237F4700D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E9AAD8B2CB800A368BE0628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F6ADCCCC2D0F7C582D405BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				732D287201C7980CE6DDEBD0 /* Sparkle in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000323AAE23D25F9DCC0B491 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6679A54199A2F30FC8A1D6F0 /* AbeSweep.entitlements */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		0AA1BB664155F59705B016E6 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A8F8D0677193E02307F1FFF9 /* AdobeDomainCatalogTests.swift */,
+				86BFAB2D719FBB7FF0A710E5 /* AdobeScannerTests.swift */,
+				A1E31572A2945EECEB6DAEF7 /* CleanupServiceTests.swift */,
+				69F175C1A0D6C0FE5565F377 /* FullDiskAccessCheckerTests.swift */,
+				D6596E498FAF54B19920C546 /* HostsFileServiceTests.swift */,
+				36E64C9E9D3D2EE36DF60E49 /* SecretSweepTests.swift */,
+			);
+			name = Tests;
+			path = Tests/DeepSweepTests;
+			sourceTree = "<group>";
+		};
+		0D292C5AEFE7558FF4EAA2C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B7B09B60BA42B4291AA472CF /* AppIcon.icns */,
+				2A87EC87B552E88E86938BBF /* Info.plist */,
+				4E56F9911682FD4AA42E5E0D /* InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1C4A00039D2E41CCB51A0003 /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				1C4A00029D2E41CCB51A0002 /* Sparkle-2.9.6.txt */,
+			);
+			path = Licenses;
+			sourceTree = "<group>";
+		};
+		38F4B9D751299EC8E18576A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4837082F4E351C89AA8A6A6E /* AbeSweep.app */,
+				71AEC31865A2F2FBD060734F /* AbeSweepTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86F4D48FEA8594D01A13CDD3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7D565AA1B48498DD31DF1D82 /* AdobeDomainCatalog.swift */,
+				8ABADA1843386F7EF0F105E1 /* AdobeProcessController.swift */,
+				8FF02794FD3A9C8AE45F64DE /* AdobeScanner.swift */,
+				74E20CBDA2797E11DB5C4000 /* AppModel.swift */,
+				5D601769A6635EA06D6B8324 /* AppNotifications.swift */,
+				5A89A75E23261504CADA2ECA /* CheckForUpdatesView.swift */,
+				2CEC53E5142B75EEF40A75F5 /* CleanupService.swift */,
+				273CAD8C09A415E701DB4B53 /* ContentView.swift */,
+				D1EA5198C909AF8242A8D113 /* DeepSweepApp.swift */,
+				05CC70D1E736F99A3674B011 /* Disclaimer.swift */,
+				61E7B83BE1FEFAA9415A9C53 /* FullDiskAccessChecker.swift */,
+				013120B89BB63CE21CF39A29 /* HostsFileService.swift */,
+				3B084EA9A5B77C6089703630 /* Localization.swift */,
+				957581FF1E41E7B82FD44A09 /* Models.swift */,
+				6A35ABD5149AE370D9B62628 /* SecretSweep.swift */,
+			);
+			name = Sources;
+			path = Sources/DeepSweep;
+			sourceTree = "<group>";
+		};
+		9B3EEAE18676E16961842DCA = {
+			isa = PBXGroup;
+			children = (
+				86F4D48FEA8594D01A13CDD3 /* Sources */,
+				0AA1BB664155F59705B016E6 /* Tests */,
+				0D292C5AEFE7558FF4EAA2C9 /* Resources */,
+				1C4A00039D2E41CCB51A0003 /* Licenses */,
+				000323AAE23D25F9DCC0B491 /* Config */,
+				939B5B9E68C7E270116A1C01 /* README.md */,
+				A649B0C7C720DCE7210A04C2 /* RELEASE.md */,
+				AA57F33EC5CD20521E965358 /* AUDIT-1.3.md */,
+				38F4B9D751299EC8E18576A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D01DF93BD5AD4317B0AF8569 /* AbeSweepTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CE2C2C560BC700F56D0843F /* Build configuration list for PBXNativeTarget "AbeSweepTests" */;
+			buildPhases = (
+				9B8B347C890A7426029C2D47 /* Sources */,
+				3E9AAD8B2CB800A368BE0628 /* Frameworks */,
+				B4F20EE56D33D39CF2D8B995 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F1EC206D8C5268E017D846B /* PBXTargetDependency */,
+			);
+			name = AbeSweepTests;
+			productName = AbeSweepTests;
+			productReference = 71AEC31865A2F2FBD060734F /* AbeSweepTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D828D765022523B2F9BCF265 /* AbeSweep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 287067B6DAD3EA17261694A6 /* Build configuration list for PBXNativeTarget "AbeSweep" */;
+			buildPhases = (
+				F261C2F13D6A7855277FC9C9 /* Sources */,
+				9F6ADCCCC2D0F7C582D405BC /* Frameworks */,
+				C106E70CC3D66241EB4B705B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AbeSweep;
+			packageProductDependencies = (
+				79F0734C5B2530B973B32BAF /* Sparkle */,
+			);
+			productName = AbeSweep;
+			productReference = 4837082F4E351C89AA8A6A6E /* AbeSweep.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C3122440F2F5BD49984CB0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					D01DF93BD5AD4317B0AF8569 = {
+						CreatedOnToolsVersion = 27.0;
+						DevelopmentTeam = 4B9X3TCDNF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D828D765022523B2F9BCF265;
+					};
+					D828D765022523B2F9BCF265 = {
+						CreatedOnToolsVersion = 27.0;
+						DevelopmentTeam = 4B9X3TCDNF;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = BC1FB2E8E3889092A11779AF /* Build configuration list for PBXProject "AbeSweep" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = hu;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				hu,
+				en,
+				Base,
+			);
+			mainGroup = 9B3EEAE18676E16961842DCA;
+			packageReferences = (
+				ECF00F203ACF5D1479023C65 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
+			productRefGroup = 38F4B9D751299EC8E18576A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D828D765022523B2F9BCF265 /* AbeSweep */,
+				D01DF93BD5AD4317B0AF8569 /* AbeSweepTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4F20EE56D33D39CF2D8B995 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C106E70CC3D66241EB4B705B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2BFD98636DC8C82DFBDDCA7 /* AppIcon.icns in Resources */,
+				EAD902D2897856AA3C2E021F /* InfoPlist.strings in Resources */,
+				1C4A00019D2E41CCB51A0001 /* Sparkle-2.9.6.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B8B347C890A7426029C2D47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A4A83776CB2741BC6185F7A /* AdobeDomainCatalogTests.swift in Sources */,
+				F6EA71FF138E265C1AD2E492 /* AdobeScannerTests.swift in Sources */,
+				E7F42F8B3D74AE29135FB568 /* CleanupServiceTests.swift in Sources */,
+				7982B37DB8356420596D3DD8 /* FullDiskAccessCheckerTests.swift in Sources */,
+				EB301C73187FFEDABB6EC7A8 /* HostsFileServiceTests.swift in Sources */,
+				071D73C99AEBE4A2849C214A /* SecretSweepTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F261C2F13D6A7855277FC9C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2906447B0A00E35DACD7225E /* AdobeDomainCatalog.swift in Sources */,
+				2C5FA621382B1DEB3F26E6E7 /* AdobeProcessController.swift in Sources */,
+				EB0CF8C20C4A99301E9E1B98 /* AdobeScanner.swift in Sources */,
+				2C6789946993C881A31AE949 /* AppModel.swift in Sources */,
+				C7BF06A761A0D19B1585D451 /* AppNotifications.swift in Sources */,
+				55388E0C0DD8FF39AC69A68F /* CheckForUpdatesView.swift in Sources */,
+				7D279154A6AE7F5D88BFD43C /* CleanupService.swift in Sources */,
+				B93CF5D8C7E4CBF4680207D2 /* ContentView.swift in Sources */,
+				B1D37B36D19059F126BBE6E7 /* DeepSweepApp.swift in Sources */,
+				8E0E091265F87F1B23B1C1D0 /* Disclaimer.swift in Sources */,
+				8AC3D3E027496F6BA96AA512 /* FullDiskAccessChecker.swift in Sources */,
+				7D71F9D480597852292DDE47 /* HostsFileService.swift in Sources */,
+				9B4845FCF9AF5C9F754BC525 /* Localization.swift in Sources */,
+				E5475361124A336BF7A432CA /* Models.swift in Sources */,
+				E6ECEB3F8687DFA7D3F910E5 /* SecretSweep.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F1EC206D8C5268E017D846B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D828D765022523B2F9BCF265 /* AbeSweep */;
+			targetProxy = 85D1E33E3C5C0C3BB7FDAA99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E56F9911682FD4AA42E5E0D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC9BFCC03F1D9F51B02CBC58 /* hu */,
+				FA9C3004ED5FAC237F4700D0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CD80B3248DAEE29E71ABFD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.abesweep.mac.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AbeSweep.app/Contents/MacOS/AbeSweep";
+			};
+			name = Debug;
+		};
+		AEF597C96AB26081E680A781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hu.abesweep.mac.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AbeSweep.app/Contents/MacOS/AbeSweep";
+			};
+			name = Release;
+		};
+		E8F1C8E90988758F2A30EADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Config/AbeSweep.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 10400;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AbeSweep;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.abesweep.mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		EB7B7EE5D1ECE5617764305B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Config/AbeSweep.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 10400;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AbeSweep;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = hu.abesweep.mac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		F029EF3A9FE6F8AE3375331F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		F7C087B3CCFE42544F744E12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		287067B6DAD3EA17261694A6 /* Build configuration list for PBXNativeTarget "AbeSweep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F1C8E90988758F2A30EADA /* Debug */,
+				EB7B7EE5D1ECE5617764305B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CE2C2C560BC700F56D0843F /* Build configuration list for PBXNativeTarget "AbeSweepTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CD80B3248DAEE29E71ABFD5 /* Debug */,
+				AEF597C96AB26081E680A781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC1FB2E8E3889092A11779AF /* Build configuration list for PBXProject "AbeSweep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7C087B3CCFE42544F744E12 /* Debug */,
+				F029EF3A9FE6F8AE3375331F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECF00F203ACF5D1479023C65 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = exactVersion;
+				version = 2.9.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		79F0734C5B2530B973B32BAF /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECF00F203ACF5D1479023C65 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0C3122440F2F5BD49984CB0B /* Project object */;
+}
