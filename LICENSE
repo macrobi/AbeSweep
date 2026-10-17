@@ -1,0 +1,132 @@
+AbeSweep Free Use and Redistribution License 1.0
+
+Copyright Veress Róbert 2026.
+Existing notices and each contributor's ownership remain unchanged.
+
+1. Scope and definitions
+
+This license applies to AbeSweep code, documentation and resources released by
+their copyright holder with this license (the "Material"), and to modifications
+of that Material ("Modified Versions"). It covers source and compiled forms.
+Independent third-party components are excluded and retain their own licenses.
+An unrelated program is not a Modified Version merely because it is used with
+AbeSweep. "Distribute" means providing a copy to another person or legal entity,
+including an affiliated company or a customer. Internal use within the same
+legal entity does not by itself constitute distribution.
+
+2. Permission
+
+Subject to these conditions, each copyright holder grants you a worldwide,
+non-exclusive, royalty-free permission to inspect, use, copy and modify the
+Material, and to distribute original or Modified Versions without charge.
+Personal, business and institutional use, including use in paid systems
+administration, is expressly permitted. These permissions last for the duration
+of the applicable copyright and are not revocable while you comply with this
+license. No ownership is transferred. Rights not granted here are reserved.
+
+3. No sale or paid access
+
+You may not sell, rent, license for a fee, or require payment for access to,
+receipt of, or use of the Material or a Modified Version. You may not include
+either in a paid software bundle, software subscription or other paid software
+product, even if it is labelled a free component or assigned a zero price.
+Renaming, modifying or repackaging it does not remove these restrictions.
+Making its functionality available to customers as a paid self-service software
+service is also prohibited. Optional donations are permitted only when payment
+is not a condition of access, receipt, use or any permission under this license.
+
+4. Paid services are permitted
+
+You may charge for actual installation, configuration, maintenance, training
+and support work involving the Material. You may use it internally to perform
+paid administration or managed services for customers. Such fees must be for
+the work, not for the software, its license or access to it, and must not be a
+disguised software sale or a paid software bundle. A customer need not purchase
+your services to obtain or use the software independently under this license.
+Any copy you supply to a customer is a distribution and must also satisfy
+sections 5 and 6. Payment for your work alone does not make that copy a sale.
+
+5. Redistribution
+
+Include this license and the applicable copyright and third-party notices with
+every distributed copy or substantial portion of the Material. Preserve those
+notices. You may distribute unchanged copies free of charge. Do not impose
+additional terms or payment conditions that reduce the recipient's permissions
+under this license. Recipients receive those permissions directly from the
+relevant copyright holders, subject to these same conditions.
+
+6. Modified Versions
+
+If you distribute a Modified Version, you must also:
+
+(a) give it a distinct product name, clearly mark it as unofficial and derived
+from AbeSweep, and never present it as an official AbeSweep release;
+(b) include a clear record of your changes and their dates;
+(c) license your modifications to the Material under this same license; and
+(d) supply the complete corresponding editable source, including your changes,
+project files and build instructions, free of charge with each distributed
+compiled version. A downloadable source archive supplied alongside the binary
+in the same release satisfies this requirement; a link to the original,
+unmodified AbeSweep source does not. For source-only distributions, supply the
+complete modified source and required project files and instructions.
+
+Corresponding source means the preferred form for making changes and what is
+needed to build that version. It excludes signing keys, credentials, personal
+data and independently available standard tools, SDKs and third-party packages;
+identify required dependencies and versions. Third-party license obligations
+still apply. Merely packaging an unchanged official binary with this license
+and its notices does not make it a Modified Version.
+
+You need not publish private modifications used only within the same legal
+entity. If you distribute those modifications later, this section applies.
+
+7. Identity, updates and third-party rights
+
+No trademark permission or endorsement is granted. Truthful attribution to
+AbeSweep is allowed and required by section 6 for Modified Versions. A
+distributed Modified Version must use its own application identity. It must
+also use its own update channel or disable updating; it must not use the
+official AbeSweep channel as its own. This does not prevent linking users to the original project.
+
+Third-party components, including Sparkle, remain governed by their own
+licenses. Nothing here reduces rights independently granted for those
+components, including commercial distribution rights. Preserve their required
+notices; see THIRD-PARTY-NOTICES.md. This license grants no rights to Adobe
+software, accounts, subscriptions or trademarks. AbeSweep is independent of
+Adobe and is not affiliated with, sponsored, approved or supported by Adobe.
+
+8. Warranty and liability
+
+The Material is supplied in its current condition. To the extent permitted by
+applicable law, its copyright holders and contributors give no warranty of
+quality, suitability, non-infringement, uninterrupted operation or preservation
+of data. You are responsible for choosing how to use it and for your backups.
+
+To the extent permitted by applicable law, the copyright holders and
+contributors are not liable for loss or damage arising from the Material or
+its use, including lost data, lost income and interruption of business. Nothing
+in this license excludes or limits a right, remedy or liability that applicable
+law does not allow to be excluded or limited. No maintenance, support, update
+or response-time commitment is made by this license.
+
+9. Non-compliance and reinstatement
+
+Your permissions under this license terminate automatically if you breach its
+conditions. They are automatically reinstated if you fully remedy the breach
+within 30 days after you first become aware of it; otherwise reinstatement
+requires the relevant copyright holder's written permission. Reinstatement
+does not erase liability for the earlier breach. Termination of your rights
+does not terminate the rights of recipients who remain in compliance.
+
+10. Interpretation
+
+If a provision cannot be enforced under applicable law, the remaining
+provisions continue to apply to the extent permitted by that law. Statutory
+rights that do not require this license are unaffected. Separate written
+permission from the relevant rights holders may authorize uses not granted
+here. This license does not automatically adopt any future license version.
+
+The English text is authoritative; Docs/LICENSE.hu.md is a Hungarian
+translation for convenience, subject to mandatory applicable law. This is a
+custom source-available license with a sale restriction, not an OSI-approved
+open source license.

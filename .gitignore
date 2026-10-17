@@ -1,0 +1,11 @@
+.DS_Store
+.build/
+.swiftpm/
+work/
+tmp/
+*.xcresult
+xcuserdata/
+# Canonical local build and release output
+Output/*
+!Output/README.md
+/Github repo/
