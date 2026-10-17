@@ -1,0 +1,64 @@
+name: Bug report
+description: Report a reproducible AbeSweep problem without sharing private data
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        AbeSweep is volunteer-maintained. Reports are reviewed as capacity permits, so a response or fix cannot be guaranteed. Remove personal paths, logs, quarantine contents, hosts entries, credentials, and account data before posting.
+  - type: dropdown
+    id: build-source
+    attributes:
+      label: Build source
+      options:
+        - Official download from macadmin.hu
+        - Official download from GitHub Releases
+        - Built from this source
+        - Modified or third-party build
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: AbeSweep version and build
+      placeholder: "1.4 (10400)"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "macOS 14.x"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Use synthetic paths and describe only the minimum safe steps.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Quote only the visible error after removing private data.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed personal data, paths, logs, hosts contents, credentials, and quarantine data.
+          required: true
+        - label: I did not reproduce this on another person's system or data without permission.
+          required: true
