@@ -75,12 +75,12 @@ between unofficial and official distributions.
 
 ## Screenshots
 
-![AbeSweep 1.4 welcome screen](Screenshot/1.4/candidate/welcome.png)
+![AbeSweep scan results](Screenshot/1.4/AbeSweep01.png)
 
-![AbeSweep 1.4 help sheet](Screenshot/1.4/candidate/help.png)
+![AbeSweep home screen after quarantine deletion](Screenshot/1.4/Abesweep04.png)
 
-Captured from the 1.4 Release test build; see the
-[screenshot notes](Screenshot/1.4/candidate/README.md) for capture details.
+Application screenshots supplied by the project owner. The settings and results
+shown are examples from that Mac; see the [screenshot notes](Screenshot/1.4/README.md).
 
 ## Requirements and development
 
