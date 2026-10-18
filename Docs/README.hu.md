@@ -1,124 +1,41 @@
 # AbeSweep
 
-Az AbeSweep natív macOS-segédprogram Adobe-alkalmazások, támogatási fájlok,
-háttérszolgáltatások, gyorsítótárak, naplók, beállítások és ellenőrzött
-hosts-bejegyzések felderítésére, áttekintésére és kijelölt eltávolítására.
+Az AbeSweep ingyenes, natív macOS-segédprogram Adobe-telepítések karbantartásához. Segít áttekinteni, mi található a gépen, eltávolítani a kiválasztott összetevőket, és előkészíteni a Macet egy újratelepítésre. Saját gépen és rendszergazdai munka során egyaránt használható.
 
-Az AbeSweep 1.4 hivatalos, notarizált DMG-je a
-[macadmin.hu](https://macadmin.hu) oldalon és a
-[GitHub Releases](https://github.com/macrobi/AbeSweep/releases/tag/v1.4) lapján
-érhető el. Mindkét helyen ugyanaz a fájl található. A GitHub a forrásnak,
-hibajegyeknek és közreműködésnek ad otthont. A saját build és a módosított
-változat nem hivatalos AbeSweep-kiadás.
+A hivatalos, notarizált **AbeSweep 1.4** a [macadmin.hu](https://macadmin.hu) oldalról és a [GitHub Releases](https://github.com/macrobi/AbeSweep/releases/tag/v1.4) lapjáról tölthető le. Mindkét helyen ugyanaz a DMG található, amely **macOS 14-től**, Apple Silicon és Intel gépeken működik. A GitHubon a forráskódot böngészheted, hibát jelezhetsz vagy fejlesztési javaslatot tehetsz.
 
-Az AbeSweep hozzáférhető forrású, ingyenesen használható segédprogram, céges
-környezetben és fizetett rendszergazdai munkában is. A [licenc](LICENSE.hu.md)
-tiltja a program értékesítését és fizetős szoftvercsomagba foglalását.
-Módosított kiadásnál átnevezés, módosításjelölés és forrásmelléklet kötelező.
-[Licencösszefoglaló](../LICENSE-STATUS.md).
+## Hogyan működik?
 
-## Fő képességek
+A vizsgálat összegyűjti az Adobe-alkalmazásokat és a hozzájuk tartozó segédfájlokat, háttérszolgáltatásokat, gyorsítótárakat, naplókat és beállításokat. A találatok mellett láthatod a méretüket és azt, miért kerültek a listába. Az alkalmazás külön jelzi, ha személyes beállítások vagy alkotói munka is érintett lehet. Választhatsz csak ideiglenes fájlokat, Creative Cloud-összetevőket, teljes eltávolítást vagy egyéni kijelölést. A vizsgálat önmagában semmit nem távolít el: a takarítás előtt áttekintheted és jóváhagyhatod a listát.
 
-- Szűken meghatározott Adobe-összetevőket keres a gyakori rendszer- és
-  felhasználói helyeken.
-- Módosítás előtt megmutatja a találat okát, méretét és kockázatát.
-- Ideiglenesfájl-, Creative Cloud-infrastruktúra-, teljes eltávolítási és egyéni
-  kijelölési módot kínál.
-- A dokumentumkezelő alkalmazások szabályos bezárását kéri, és megáll, ha azok
-  nyitva maradnak, hogy a felhasználó elmenthesse a munkáját.
-- Az eredeti útvonal megőrzésével helyi karanténba mozgatja a kijelölt elemeket,
-  visszaállítási jegyzéket és olvasható naplót készít.
-- Az `/etc/hosts` fájlból csak ellenőrzött Adobe-bejegyzéseket távolít el, az
-  eredetit pedig ellenőrzött másolatként karanténban tartja.
-- Ütközésellenőrzést, visszaállítást és hiba vagy megszakítás esetén lehetőség
-  szerinti visszagörgetést biztosít.
+Az AbeSweep először a megnyitott dokumentumkezelő alkalmazások szabályos bezárását kéri. Ha nyitva maradnak, megáll, hogy legyen lehetőséged elmenteni a munkádat. A kijelölt fájlokat ezután helyi karanténba helyezi, és feljegyzi az eredeti helyüket a visszaállításhoz. Olvasható naplót is készít. Az `/etc/hosts` fájlból ellenőrzött Adobe-bejegyzéseket tud eltávolítani, miközben megőrzi az eredeti fájl ellenőrzött másolatát. Egyes helyek eléréséhez Teljes lemezhozzáférés kell, bizonyos műveletekhez pedig rendszergazdai jóváhagyást kérhet a macOS.
 
-Az alkalmazás megnyitása és a helyi vizsgálat önmagában nem távolít el fájlt.
-A takarítás csak a kijelölés áttekintése, a kockázat megerősítése és a szükséges
-macOS-jóváhagyás után indul.
+A karanténból megpróbálhatod visszaállítani, amire még szükséged van, de ez nem helyettesíti a biztonsági mentést. A visszaállítás nem ír felül időközben újból létrejött fájlt, és nem tudja visszahozni a hiányzó vagy megváltozott karanténelemeket. A megszakítás biztonságos lépések között történik, ezért eltarthat egy ideig. Hagyd nyitva az AbeSweepet, amíg megpróbálja visszavonni a műveletet, majd nézd át az eredményt és a naplót. A **Karantén végleges törlése** után az érintett fájlok az alkalmazással már nem állíthatók vissza. Takarítás előtt mentsd a munkádat, ellenőrizd a Creative Cloud szinkronizálását, és legyen külön biztonsági mentésed. A további korlátokat és a helyreállítás menetét a [használati útmutató](USAGE.md) írja le.
 
-## Biztonsági korlátok
+## Adatvédelem és frissítések
 
-A karantén és a visszaállítás csökkenti a kockázatot, de nem biztonsági mentés,
-és nem garantálja minden hiba vagy ütközés helyreállítását. A megszakítási kérés
-biztonságos műveleti lépések között lép életbe, ezért nem mindig azonnali. Hagyd
-nyitva az AbeSweepet a visszagörgetés végéig, majd ellenőrizd az eredményt és a
-naplót.
+A vizsgálat és a takarítás helyben történik. A találatok, fájlútvonalak, naplók, hosts-tartalom, karantén és Adobe-fiókadatok a Macen maradnak. A Sparkle a macadmin.hu oldalról ellenőrzi az alkalmazásfrissítéseket; a rendszerprofil küldése ki van kapcsolva.
 
-A visszaállítás nem ír felül újból létrejött célfájlt. Hiányzó vagy megváltozott
-karanténelemet nem tud újra létrehozni. A **Karantén végleges törlése** nem
-vonható vissza, utána helyreállítás nem lehetséges. Takarítás előtt mentsd a
-munkádat, ellenőrizd a Creative Cloud szinkronizálását, és legyen független,
-naprakész biztonsági mentésed.
-
-Az AbeSweep még folyamat- vagy szolgáltatásmódosítás előtt ellenőrzi a teljes
-kijelölést. Elutasítja azt az indítási szolgáltatást, amelynek plistje,
-végrehajtható állománya vagy Adobe-kódaláírása nem igazolható. A kijelölt
-fájloknak a karanténnal azonos fájlrendszerköteten kell lenniük; különben egy
-kijelölt elemet sem mozgat el.
-
-Visszaállításkor minden meglévő karanténelemnek ugyanazon a fájlrendszerköteten
-kell lennie, mint a célútvonal legközelebbi meglévő szülőjének. Az AbeSweep ezt
-minden elemnél, mozgatás előtt ellenőrzi, és elutasítja a visszaállítást, ha a
-biztonságos visszagörgetés nem garantálható.
-
-## Adatvédelem és hálózat
-
-A vizsgálati eredmény, fájlútvonal, hosts-tartalom, napló, karantén és
-Adobe-fiókadat a Macen marad.
-
-Az AbeSweep két egymástól különálló hálózati funkciót használ:
-
-- A Sparkle a hivatalos `macadmin.hu` frissítési feedet ellenőrzi. A Sparkle
-  rendszerprofil-küldése ki van kapcsolva.
-- Az opcionális Adobe-domainfelülvizsgálat elkülönített HTTPS-munkamenetben
-  letölti az Adobe nyilvános hálózati végpontoldalát, majd helyben összeveti a
-  beépített katalógussal. Új telepítésnél alapból ki van kapcsolva; kézi
-  ellenőrzés vagy külön engedélyezett heti ellenőrzés kapcsolatot létesíthet az
-  Adobe kiszolgálójával. Az új cím csak felülvizsgálati jelölt, automatikusan nem
-  kerül eltávolításra.
-
-A célkiszolgáló a szokásos hálózati kapcsolat részeként láthatja az IP-címet és
-a technikai kérés metaadatait. Részletek: [USAGE.md](USAGE.md).
-
-A forrásból készült build az alapbeállítás szerint megtartja a hivatalos
-frissítési feedet és a nyilvános frissítés-ellenőrző kulcsot. A licenc szerint
-a továbbadott módosított buildet át kell nevezni és
-egyértelműen jelölni. Technikailag a Sparkle-t is ki kell kapcsolni, vagy saját
-HTTPS-feedet és a bizalmasan őrzött aláírókulcshoz tartozó saját nyilvános
-ellenőrző kulcsot kell használni, hogy a felhasználó ne kerüljön észrevétlenül
-hivatalos és nem hivatalos kiadások között.
+Az Adobe-domainlista felülvizsgálata külön, választható funkció. Kézi indításkor vagy a heti ellenőrzés bekapcsolása után az AbeSweep letölti az Adobe nyilvános hálózati végpontlistáját, és a gépen összehasonlítja a saját listájával. Új telepítésnél ez ki van kapcsolva, az újonnan talált címeket pedig soha nem távolítja el automatikusan. A kiszolgáló a szokásos webes kapcsolathoz hasonlóan láthatja az IP-címet és a kapcsolat technikai adatait. Mindkét hálózati funkcióról a [használati útmutatóban](USAGE.md) olvashatsz bővebben.
 
 ## Képernyőképek
 
+A találati listán áttekintheted, mit talált az AbeSweep, és még a módosítások előtt eldöntheted, mit szeretnél eltávolítani.
+
 ![Az AbeSweep találati listája](../Screenshot/1.4/AbeSweep01.png)
+
+Az alábbi kezdőképernyő a karantén végleges törlését igazolja vissza. A művelet naplója megmarad.
 
 ![Az AbeSweep kezdőképernyője a karantén törlése után](../Screenshot/1.4/Abesweep04.png)
 
-A projekt tulajdonosa által készített alkalmazásképek. A látható beállítások és
-eredmények az adott Mac állapotát mutatják.
+A képek a projekt készítőjének Macjén készültek, ezért a beállítások és a találatok az adott gép állapotát mutatják.
 
-## Követelmények és fejlesztés
+## Forráskód, licenc és közreműködés
 
-- macOS 14 vagy újabb
-- Swift 6-ot támogató Xcode
-- Swift Package Managerrel rögzített Sparkle 2.9.6
+Az AbeSweep forrása megtekinthető, módosítható és továbbadható a [licencben](LICENSE.hu.md) leírt feltételekkel. Magánszemélyek, vállalatok és intézmények ingyen használhatják, fizetett rendszergazdai munkában is. Telepítésért, karbantartásért és támogatásért kérhetsz munkadíjat, magát a szoftvert azonban nem értékesítheted, és fizetős szoftvercsomag részeként sem terjesztheted. A továbbadott módosított változatot át kell nevezni, jelezni kell a változtatásokat, és mellékelni kell a hozzá tartozó forrást, azonos licencfeltételekkel. Rövid összefoglaló az angol [licencismertetőben](../LICENSE-STATUS.md) is található.
 
-Egyes védett helyekhez Full Disk Access szükséges, a rendszerfájlok mozgatásához
-vagy szolgáltatások vezérléséhez pedig ettől külön rendszergazdai jóváhagyást is
-kérhet a macOS. Takarítás előtt olvasd el a [használati útmutatót](USAGE.md).
+Az 1.4-es verzió (build 10400) fordításához Swift 6-ot támogató Xcode szükséges. A Sparkle rögzített 2.9.6-os verzióját a Swift Package Manager tölti le. A fordítási és tesztelési parancsokat a [buildútmutató](BUILDING.md), a módosítások beküldésének menetét a [közreműködési útmutató](../CONTRIBUTING.md) tartalmazza. A saját fordítás és a módosított változat nem hivatalos kiadás. Módosított alkalmazás terjesztésekor a Sparkle-t is ki kell kapcsolni, vagy saját frissítési csatornát és aláírókulcsokat kell beállítani, mert a forrás alapból megtartja a hivatalos csatornát és a nyilvános ellenőrző kulcsot.
 
-A felülvizsgált forrás jelenlegi verziója AbeSweep 1.4, buildszáma 10400.
+Az AbeSweepet a szabadidőmben gondozom. Szívesen fogadok hibajelzéseket és ötleteket, de válaszra vagy javításra nem tudok határidőt ígérni. Nyilvános hibajegyhez csak személyes és bizalmas adatoktól megtisztított naplórészletet csatolj. Biztonsági hibát a [biztonsági útmutató](../SECURITY.md) szerint jelezz.
 
-A buildelés leírása: [BUILDING.md](BUILDING.md). A használati és helyreállítási
-útmutató: [USAGE.md](USAGE.md). A közreműködés feltételei:
-[CONTRIBUTING.md](../CONTRIBUTING.md).
-
-A projektet önkéntes alapon tartják karban. A hibajegyek feldolgozása a
-rendelkezésre álló kapacitás szerint történik; válasz vagy javítás nem
-garantálható.
-
-Az AbeSweep független, nem hivatalos projekt. Nem az Adobe Inc. terméke, és az
-Adobe Inc. nem támogatja, nem ellenőrizte és nem hagyta jóvá. Az Adobe, a
-Creative Cloud és a kapcsolódó terméknevek az Adobe Inc. védjegyei lehetnek;
-itt kizárólag az együttműködés és a segédprogram céljának leírására szolgálnak.
+Az AbeSweep az Adobe-tól független projekt: nem az Adobe Inc. terméke, és a vállalat nem támogatja, nem ellenőrizte és nem hagyta jóvá. Az Adobe, a Creative Cloud és a kapcsolódó terméknevek a jogosultak védjegyei; itt annak leírására szerepelnek, hogy a segédprogram mivel használható.
