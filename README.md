@@ -1,109 +1,41 @@
 # AbeSweep
 
-AbeSweep is a native macOS utility for finding, reviewing, and removing selected
-Adobe-related applications, support files, background services, caches, logs,
-preferences, and verified hosts-file entries.
+AbeSweep is a free, native macOS utility for maintaining Adobe installations. It helps you see what is installed, remove selected components and prepare a Mac for a fresh installation. You can use it on your own Mac or as part of your work as a systems administrator.
 
-The official notarized AbeSweep 1.4 DMG is available from
-[macadmin.hu](https://macadmin.hu) and [GitHub Releases](https://github.com/macrobi/AbeSweep/releases/tag/v1.4).
-Both channels provide the identical DMG. This repository hosts the source,
-issue tracking and contributions. Source builds, forks and third-party packages
-are not official releases.
+Download the official, notarized **AbeSweep 1.4** from [macadmin.hu](https://macadmin.hu) or [GitHub Releases](https://github.com/macrobi/AbeSweep/releases/tag/v1.4). Both offer the same DMG, which runs on Apple Silicon and Intel Macs with **macOS 14 or later**. This repository is where you can read the source, report a problem or suggest an improvement. [Magyar ismertető](Docs/README.hu.md).
 
-AbeSweep is source-available and free to use, including for business and paid
-systems administration. The [license](LICENSE) prohibits software sales and
-paid software bundles. Modified distributions must be renamed, marked and
-supplied with source. See [LICENSE-STATUS.md](LICENSE-STATUS.md) for a summary.
+## Using AbeSweep
 
-## What it does
+A scan brings together Adobe applications and related support files, background services, caches, logs and preferences. Each result includes its size and an explanation of why it was found, with a warning where personal settings or creative work may be involved. You can choose temporary files, Creative Cloud components, a full removal or your own selection. Scanning does not remove anything: you review the results and confirm before cleanup begins.
 
-- Scans common system and user locations for narrowly matched Adobe components.
-- Explains each result, its size, and its risk before cleanup.
-- Offers temporary-file, Creative Cloud infrastructure, full removal, and
-  custom selection presets.
-- Asks running document applications to quit normally and stops if they remain
-  open, so the user can save their work.
-- Moves selected items to a local quarantine while preserving their original
-  paths, then records a restore manifest and a readable log.
-- Can remove verified Adobe entries from `/etc/hosts` while retaining a checked
-  copy of the original file in quarantine.
-- Supports restore, conflict detection, and best-effort rollback if an operation
-  is cancelled or fails.
+AbeSweep asks running document applications to close normally and stops if they stay open, giving you a chance to save your work. It then moves the selected files into a local quarantine and records their original locations in a restore manifest and log. It can also remove verified Adobe entries from `/etc/hosts`, keeping a checked copy of the original file. Some locations need Full Disk Access; macOS may also ask for administrator authorization.
 
-Opening AbeSweep or running a local scan does not remove files. Cleanup starts
-only after the user reviews the selection, confirms the risk, and approves any
-macOS authorization request.
+The quarantine lets you attempt a restore if something is still needed, but it cannot replace a backup. Restore will not overwrite a file that has reappeared, and missing or changed quarantine items cannot be recovered by the app. Cancellation takes effect between safe steps and may take a little time; leave AbeSweep open while it tries to undo the operation, then check the result and log. Once you choose **Permanently Delete Quarantine**, those files can no longer be restored through AbeSweep. Save your work, check Creative Cloud synchronization and keep an independent backup before cleanup. The [usage guide](Docs/USAGE.md) explains recovery and its limits in more detail.
 
-## Safety limits
+## Privacy and updates
 
-Quarantine and restore reduce risk; they are not a backup and cannot guarantee
-recovery in every failure or conflict. Cancellation requests are handled between
-safe operation steps, so cancellation may not be immediate. Keep AbeSweep open
-until rollback finishes, then inspect the result and log.
+Scans and cleanup run locally. Your scan results, paths, logs, hosts-file contents, quarantine and Adobe account data stay on your Mac. Sparkle checks for updates through macadmin.hu, with system profiling disabled.
 
-Restoration never overwrites a destination that has reappeared. A missing or
-changed quarantine item cannot be recreated. **Permanently Delete Quarantine**
-is irreversible and makes later restoration impossible. Save active work,
-verify Creative Cloud synchronization, and keep a current independent backup
-before cleanup.
-
-## Privacy and network access
-
-Scan results, paths, hosts-file contents, logs, quarantine data, and Adobe
-account data stay on the Mac.
-
-AbeSweep has two separate network features:
-
-- Sparkle checks the official `macadmin.hu` update feed. Sparkle system profiling
-  is disabled.
-- The optional Adobe domain review downloads Adobe's public network-endpoint page
-  over an ephemeral HTTPS session and compares it locally with the built-in
-  catalog. It is off by default on a new installation; manual review or an
-  explicitly enabled weekly review can contact Adobe. New domains are review
-  candidates only and are never removed automatically.
-
-As with any network request, the destination server can see the connection's IP
-address and technical request metadata. See [Docs/USAGE.md](Docs/USAGE.md) for
-details.
-
-Source builds retain the official update feed and public update-verification key
-unless the builder changes them. Under the license, a
-distributed modified build must be renamed and clearly marked. Technically, it also needs
-Sparkle disabled or an independent HTTPS feed with its own public verification
-key backed by a privately held signing key, so users are not silently moved
-between unofficial and official distributions.
+There is also an optional Adobe domain review. When you run it, or enable the weekly check, AbeSweep downloads Adobe's public network-endpoint page and compares it with its own list on your Mac. This is off by default on a new installation, and newly found addresses are never removed automatically. As with other web requests, the server can see your IP address and connection metadata. The [usage guide](Docs/USAGE.md) covers both network features.
 
 ## Screenshots
 
+The scan results show what AbeSweep has found and let you review the selection before making changes.
+
 ![AbeSweep scan results](Screenshot/1.4/AbeSweep01.png)
+
+The home screen below shows the confirmation after the quarantine has been permanently deleted. The log is retained.
 
 ![AbeSweep home screen after quarantine deletion](Screenshot/1.4/Abesweep04.png)
 
-Application screenshots supplied by the project owner. The settings and results
-shown are examples from that Mac; see the [screenshot notes](Screenshot/1.4/README.md).
+These are screenshots from the project owner's Mac, so the settings and results reflect that installation. [About the screenshots](Screenshot/1.4/README.md).
 
-## Requirements and development
+## Source, license and contributions
 
-- macOS 14 or later
-- Xcode with Swift 6 support
-- Sparkle 2.9.6, resolved through Swift Package Manager
+The source is available to read, modify and share under the [AbeSweep Free Use and Redistribution License](LICENSE). Personal, business and institutional use is free, including paid systems administration. You may charge for genuine installation, maintenance or support work, but you may not sell the software or include it in a paid software bundle. If you distribute a modified version, you must give it a different name, identify your changes and include the corresponding source under the same terms. See the [license summary](LICENSE-STATUS.md) for details.
 
-Some protected locations require Full Disk Access, and moving system files or
-controlling services may also require separate administrator authorization. See
-[Docs/USAGE.md](Docs/USAGE.md) before cleanup.
+To build version 1.4 (build 10400), you need Xcode with Swift 6 support. Swift Package Manager resolves the pinned Sparkle 2.9.6 dependency. The [build guide](Docs/BUILDING.md) includes build and test commands, and the [contribution guide](CONTRIBUTING.md) explains how to propose changes. Source builds and forks are unofficial; anyone distributing a modified build must also disable Sparkle or set up their own update feed and signing keys. The source otherwise retains the official feed and public verification key.
 
-The current reviewed source version is AbeSweep 1.4, build 10400.
+I maintain AbeSweep in my spare time. Bug reports and suggestions are welcome, though I cannot promise a response or fix by a particular date. Please remove private information from logs before posting an issue. For a possible security vulnerability, follow the [security reporting guide](SECURITY.md).
 
-Build instructions are in [Docs/BUILDING.md](Docs/BUILDING.md). Usage and
-recovery guidance are in [Docs/USAGE.md](Docs/USAGE.md). Hungarian documentation
-is available in [Docs/README.hu.md](Docs/README.hu.md).
-
-Contributions are welcome under the terms described in
-[CONTRIBUTING.md](CONTRIBUTING.md). This is a volunteer-maintained project;
-issues are reviewed as capacity permits, and a response or fix cannot be
-guaranteed.
-
-AbeSweep is an independent, unofficial project. It is not an Adobe Inc. product
-and has not been supported, reviewed, or approved by Adobe Inc. Adobe, Creative
-Cloud, and related product names may be trademarks of Adobe Inc.; they are used
-only to describe interoperability and the utility's purpose.
+AbeSweep is an independent project and is not made, supported, reviewed or approved by Adobe Inc. Adobe, Creative Cloud and related product names belong to their respective trademark owners and are used here to describe what the utility works with.

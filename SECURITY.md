@@ -1,39 +1,13 @@
-# Security Policy
+# Reporting a security problem
 
-## Supported version
+If you find a possible security vulnerability in AbeSweep, please help keep the details private while it is being reviewed. Use GitHub's private vulnerability-reporting option in the **Security** tab if it is available. If it is not, open a short issue asking how to get in touch privately, without including the exploit or sensitive data.
 
-Security review focuses on the current source and the current official AbeSweep
-release. The official notarized version 1.4 DMG is available from [macadmin.hu](https://macadmin.hu) and as the identical file on
-this repository's GitHub Releases page. Older or modified builds may not
-receive fixes.
+A useful report explains which macOS and AbeSweep versions are affected, what you expected the app to prevent and how to reproduce the problem safely. Please say whether you used an official download, a local build or a modified version. Personal paths, logs, quarantine contents, hosts-file contents, credentials and signing information do not belong in a public issue. Only test on systems and data you have permission to use.
 
-## Reporting a vulnerability
+I review reports as time allows and cannot promise an acknowledgement, fix or release by a particular date. Security work focuses on the current source and official release; older or modified builds may not receive fixes. The official notarized 1.4 DMG is available from [macadmin.hu](https://macadmin.hu) and [GitHub Releases](https://github.com/macrobi/AbeSweep/releases/tag/v1.4), with the same file at both locations.
 
-Prefer GitHub's private vulnerability-reporting flow under the repository's
-**Security** tab when it is enabled. If private reporting is unavailable, open a
-minimal issue asking for a private contact channel. Do not publish exploit
-details, personal paths, logs, quarantine contents, hosts-file contents,
-credentials, signing material, or other sensitive data in a public issue.
+## Areas that need particular care
 
-Include the affected version, macOS version, expected security boundary, and the
-smallest safe reproduction. State whether the application was an official
-macadmin.hu or GitHub Releases download, a local source build, or a modified
-distribution.
+AbeSweep can move and permanently delete files, restore quarantined content, change selected `/etc/hosts` entries and control validated background jobs. It can also access protected application containers when the user has granted Full Disk Access. Problems involving path validation, symlinks, files being replaced during an operation, authorization, rollback or unintended overwriting are therefore especially relevant.
 
-This project is volunteer-maintained. Reports are evaluated as capacity permits;
-an acknowledgement time, fix, or release date cannot be guaranteed. Do not test
-against another person's Mac, data, accounts, or services without permission.
-
-## Relevant boundaries
-
-AbeSweep moves and permanently deletes files, edits selected `/etc/hosts`
-entries with authorization, controls validated background jobs, opens protected
-application containers with user-granted Full Disk Access, restores quarantine
-content, and consumes signed Sparkle update metadata. Reports involving path
-validation, symlink or identity replacement, authorization boundaries, update
-signatures, rollback, destination overwrites, or unintended data disclosure are
-especially useful.
-
-The Adobe domain-review feature downloads one public Adobe page over an
-ephemeral HTTPS session. Sparkle separately contacts the official AbeSweep
-update feed. Neither feature is intended to upload local scan data.
+Update signature checks and unintended data disclosure also deserve attention. Sparkle contacts the official update feed, while the optional Adobe domain review downloads a public Adobe page through a separate, ephemeral HTTPS session. Neither feature is intended to upload local scan data.

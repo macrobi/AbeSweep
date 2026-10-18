@@ -1,56 +1,23 @@
-# Contributing
+# Contributing to AbeSweep
 
-AbeSweep is volunteer-maintained. Reports and focused contributions are welcome,
-but response times and acceptance cannot be guaranteed.
+If something does not work as expected, or you have an idea that would make AbeSweep more useful, please open an issue. I maintain the project in my spare time, so I cannot promise a response date or that every suggestion will become a feature. Small, focused fixes are welcome.
 
-Before contributing, read [LICENSE](LICENSE) and [LICENSE-STATUS.md](LICENSE-STATUS.md).
-Submit only material you are authorized to provide
-under this license, and clearly identify separately licensed third-party code.
-Unless explicitly agreed otherwise, intentionally submitted contributions to
-the covered Material are offered under the same license. Contributors retain
-ownership; no copyright assignment is required. A contribution does not make
-its author an official release publisher.
+## Reporting a problem
 
-## Issues
+Tell me which versions of macOS and AbeSweep you are using, and whether you downloaded the official app or built it yourself. Describe what you were trying to do, the cleanup mode you selected and the last step that completed. A few clear steps to reproduce the problem and the exact error message are usually the best starting point.
 
-Use the GitHub issue template and include:
+Before sharing a log excerpt or screenshot, remove usernames, personal paths, account details, file contents and anything else you would not want made public. Do not upload a full quarantine, restore manifest or unedited log. Hosts-file contents, credentials and signing information should also stay private. If the problem might be a security vulnerability, use the process in [SECURITY.md](SECURITY.md).
 
-- macOS and AbeSweep versions;
-- whether the build came from macadmin.hu or was built from source;
-- the selected cleanup mode and the last safe step completed;
-- concise reproduction steps and the exact visible error.
+## Proposing a change
 
-Remove usernames, home-directory paths, account identifiers, file contents,
-hosts entries, logs, quarantine manifests, signing data, tokens, and other
-private information before posting. Do not attach a full quarantine or an
-unedited log.
+Keep a change tied to a specific problem and preserve the app's native macOS design. Avoid adding dependencies, accounts, analytics or network services unless the problem genuinely requires them. Deployment targets, bundle identifiers, dependencies, entitlements, signing and privacy behavior should stay as they are unless changing them is part of the agreed work.
 
-For a suspected security vulnerability, follow [SECURITY.md](SECURITY.md).
+Take particular care with filesystem matching, cancellation, quarantine, restore and permanent deletion. Changes that could affect deletion, overwriting, permissions, path validation or rollback need focused tests. Use synthetic paths such as `/Users/example/...` in tests and documentation, and keep personal data, credentials, build products and release secrets out of commits.
 
-## Changes
+Run `swift test` and the Xcode Debug tests before submitting a code change. If it affects a release build, also run the unsigned Xcode Release build described in [Docs/BUILDING.md](Docs/BUILDING.md). Explain what changed and how you checked it so another person can follow the reasoning.
 
-Keep changes small and tied to a concrete user problem. Preserve the existing
-native macOS design, minimum deployment target, bundle identifiers, privacy
-behavior, dependency versions, entitlements, and signing settings unless the
-issue explicitly requires a change.
+## License and modified versions
 
-- Avoid new dependencies, network services, analytics, tracking, accounts, and
-  data collection.
-- Do not broaden filesystem matching or deletion rules without focused tests.
-- Treat cancellation, quarantine, restore, and permanent deletion as
-  data-safety code.
-- Use synthetic `/Users/example/...` paths in fixtures and documentation.
-- Keep credentials, personal paths, user data, build products, and release
-  secrets out of commits.
-- Add tests for behavior that could cause deletion, overwrite, privilege, path
-  validation, or rollback regressions.
+Please read [LICENSE](LICENSE) and the [license summary](LICENSE-STATUS.md) before contributing. Submit only work you are entitled to share under these terms, and identify any third-party code that has a separate license. Unless explicitly agreed otherwise, contributions intentionally submitted for inclusion are offered under the same license. You keep ownership of your work; no copyright assignment is required, and contributing does not make you an official release publisher.
 
-Run `swift test` and the Xcode Debug test suite before proposing a change. For a
-release-affecting change, also perform an unsigned Xcode Release build as shown
-in [Docs/BUILDING.md](Docs/BUILDING.md).
-
-Modified distributions are unofficial. The license requires a distinct
-name, clear change notices and corresponding source under the same terms.
-Use a separate application identity and a separate update channel, or disable
-updating while retaining the separate identity. Do not imply endorsement by
-AbeSweep or Adobe. Consult the licensing status before any redistribution.
+If you distribute a modified version, the license requires a different name, clear change notices and the corresponding source under the same terms. Give the app its own identity and update channel, or disable updates while keeping that separate identity. Make clear that it is an unofficial version, without implying endorsement by AbeSweep or Adobe.
