@@ -89,6 +89,15 @@ HTTPS-feedet és a bizalmasan őrzött aláírókulcshoz tartozó saját nyilvá
 ellenőrző kulcsot kell használni, hogy a felhasználó ne kerüljön észrevétlenül
 hivatalos és nem hivatalos kiadások között.
 
+## Képernyőképek
+
+![Az AbeSweep találati listája](../Screenshot/1.4/AbeSweep01.png)
+
+![Az AbeSweep kezdőképernyője a karantén törlése után](../Screenshot/1.4/Abesweep04.png)
+
+A projekt tulajdonosa által készített alkalmazásképek. A látható beállítások és
+eredmények az adott Mac állapotát mutatják.
+
 ## Követelmények és fejlesztés
 
 - macOS 14 vagy újabb
